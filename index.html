@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heavans Garden</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="script.js"></script>
+
+ </head>
+ <body>
+    <nav id="desktop-nav">
+      <div class="logo">Heavans Garden</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#profile">Sobre</a></li>
+          <li><a href="#about">Experiência</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Heavans Garden</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#profile" onclick="toggleMenu()">Sobre</a></li>
+          <li><a href="#about" onclick="toggleMenu()">Experiência</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Evelyn | Roberto profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Seja Bem Vindo Ao Nosso Restaurante</p>
+        <h1 class="title">Heavans Garden</h1>
+        <p class="section__text__p2">Comida Francesa</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+            Meus Pedidos
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Rastrear o Envio
+          </button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com/'" />
+          <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/'" />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">saiba mais sobre</p>
+      <h1 class="title">QUALIFICAÇÃO</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Experience</h3>
+              <p>45+ anos <br />Culinária Francesa </p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>Le <br />Cordon Bleu</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              No Heavans Garden, você vai saborear pratos e vinhos franceses de qualidade, em um ambiente caseiro e chique. Venha conhecer o Heavans Garden, o restaurante que vai encantar o seu paladar.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">entre em</p>
+      <h1 class="title">CONTATO</h1>
+      <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+              <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+              <p><a href="mailto:examplemail@gmail.com">heavansGarden@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+              <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+              <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          </div>
+      </div>
+      <div class="contact-form-container">
+        <form id="contact-form" >
+            <input type="text" id="name" name="name" class="form-input" placeholder="Nome" required>
+            <input type="email" id="email" name="email" class="form-input" placeholder="E-mail" required>
+            <input type="tel" id="phone" name="phone" class="form-input" placeholder="Telefone" required>
+            <input type="datetime-local" id="reservation_time" name="reservation_time" class="form-input" placeholder="Data e hora da reserva" required>
+            <div class="input-group">
+              <input type="number" id="guests" name="guests" class="form-input" placeholder="Número de convidados" required>
+              <input type="number" id="price" name="price" class="form-input" placeholder="Preço por pessoa" required readonly>
+          </div>
+          
+
+            <button type="submit" class="form-button">Reservar</button>
+        </form>
+    </div>
+    
+  </section>
+
+  
+  
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#experience">Experiência</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Heavans Garden 2024. Todos os direitos reservados</p>
+    </footer>
+    
